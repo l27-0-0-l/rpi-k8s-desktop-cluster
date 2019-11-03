@@ -21,7 +21,7 @@ https://docs.google.com/drawings/d/1kvcEVfH1zeM1cWgTxiEpEaI1fUz_su6O05IjGHCAz_0/
 power management - hardware project (probably arduino + eth + relay shield)
 https://docs.google.com/drawings/d/1V3gBbgemZfL_gll-Gbh4ge6LJ9uGnUedN-kgccuC3VU/edit?usp=sharing
 
-hdmi and audio - hdmi should have switch (hardwar project, probably arduino + eth shield + hdmi switch) and analog mixer
+hdmi and audio - hdmi should have switch (hardware project, probably arduino + eth shield + hdmi switch) and analog mixer
 there will be a need for detection of connected hdmi, and labeling node with active hdmi connection
 for pulseaudio there are some sound sharing solutions that could be helpful
 https://docs.google.com/drawings/d/1xN0cfwsOpq-x7y147crP51LZHoOkih-m13GIcx99OWI/edit?usp=sharing
