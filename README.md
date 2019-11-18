@@ -14,6 +14,8 @@ https://docs.google.com/drawings/d/1XI8nkcKa3x-YcSedER6-IKUlBa9Y5fa52OVJSirwfQk/
 
 storage layout - having multiple pods (within daemonset) act as targets, and one pod acting as initiator, creating raid targets and providing storage share
 https://docs.google.com/drawings/d/1XXn57l4X9QwumDOLttvCGhqcktzC4zwETvv7kQrHgRw/edit?usp=sharing
+storage alternative as iscsi might not be flexible solution as ceph
+https://docs.google.com/drawings/d/1TSiAGWaNOVeTTIKaaHx8rq-IWBkQBVRvHw-_R69R2qk/edit
 
 expected service layers - many on single drawing
 https://docs.google.com/drawings/d/1kvcEVfH1zeM1cWgTxiEpEaI1fUz_su6O05IjGHCAz_0/edit?usp=sharing
