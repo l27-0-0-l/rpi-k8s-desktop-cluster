@@ -42,3 +42,6 @@ bash - how to have bash that can switch between nodes and still operate ?
 is there a nide to kps (kubernetes ps) that would act like ps on all nodes ?
 how to preserve history ? 
 
+
+LOG:
+built and pushed quay.io/loopback/haproxy-ingress for arm/pi
