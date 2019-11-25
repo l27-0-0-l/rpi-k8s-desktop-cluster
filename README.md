@@ -45,3 +45,4 @@ how to preserve history ?
 
 LOG:
 working on building haproxy-ingress for arm
+successfuly build quay.io/loopback/haproxy-ingress:release-0.8
