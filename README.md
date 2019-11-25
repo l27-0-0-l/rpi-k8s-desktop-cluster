@@ -44,4 +44,4 @@ how to preserve history ?
 
 
 LOG:
-built and pushed quay.io/loopback/haproxy-ingress:v0.8-beta.5 for arm/pi
+working on building haproxy-ingress for arm
