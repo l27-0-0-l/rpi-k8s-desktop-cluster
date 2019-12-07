@@ -11,7 +11,8 @@ DATE=$(date +%Y-%m-%d_%H-%M-%S)
 mkdir DUMP_ETCD_${CTX_ARG}_$DATE
 cd DUMP_ETCD_${CTX_ARG}_$DATE
 
-kubectl $CONTEXT -n kube-system exec -it etcd-rpi3-0 -- /bin/sh -c 'ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt get "" --prefix=true -w json'  > etcd_dump.json
+ETCDPOD=$( kubectl $CONTEXT -n kube-system get pods | grep etcd | awk '{ print $1 }' | head -1)
+kubectl $CONTEXT -n kube-system exec -it $ETCDPOD -- /bin/sh -c 'ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cacert /etc/kubernetes/pki/etcd/ca.crt --key /etc/kubernetes/pki/etcd/server.key --cert /etc/kubernetes/pki/etcd/server.crt get "" --prefix=true -w json'  > etcd_dump.json
 
 cat etcd_dump.json | jq -r .kvs[].key  > keys
 
